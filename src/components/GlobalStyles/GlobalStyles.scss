@@ -1,5 +1,4 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
     --primary: #fe2c55;
@@ -24,7 +23,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'MyRoboto', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
@@ -41,6 +40,14 @@ input,
 a[href] {
     color: var(--text-color);
     text-decoration: none;
+}
+
+// Fonts emmbeded
+@font-face {
+    font-family: MyRoboto;
+    src: url('/assets/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
 }
 
 // Custom tippy tooltip

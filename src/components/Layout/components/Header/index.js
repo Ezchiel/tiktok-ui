@@ -25,6 +25,7 @@ import images from '~/assets/images';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import AccountItem from '~/components/AccountItem';
 import Menu from '~/components/Popper/Menu';
+import Image from '~/components/Image';
 
 const cx = classNames.bind(styles);
 
@@ -155,7 +156,7 @@ function Header() {
 
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
-                            <img
+                            <Image
                                 className={cx('user-avatar')}
                                 src="https://p16-sign-sg.tiktokcdn.com/tos-alisg-avt-0068/2bcbdb1c37b2e82660133dcab5a3389b~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=fc153478&x-expires=1754290800&x-signature=GZ7usHf36bNHRA1rjefRQ1AlTcs%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=a1d2006b&idc=sg1"
                                 alt="Nguyen Van A"
